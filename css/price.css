@@ -1,0 +1,122 @@
+.price_menu {
+    border-bottom: 1px solid #202037;
+}
+.price_menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    max-width: 846px;
+    margin: 0 auto;
+}
+.price_menu li {
+    margin-top: 24px;
+}
+.price_menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    color: #202037;
+}
+.price_menu a::after {
+    text-align: center;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: block;
+    content: "\f078";
+}
+
+.price_wrap {
+    max-width: 1218px;
+    margin: 0 auto;
+    margin-top: 127px;
+}
+.price_wrap .price_wrap-block {
+    margin-bottom: 164px;
+}
+.price_wrap .price_wrap-block-heading {
+    font-size: 24px;
+    margin-bottom: 60px;
+}
+.price_wrap .price_wrap-block-heading-nam {
+    background-color: #202037;
+    color: #fff;
+    font-family: Avenir, sans-serif;
+    padding: 20px;
+    margin-right: 57px;
+}
+.price_wrap .price_wrap-block-heading-sub {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.price_wrap .price_wrap-block-txt {
+    font-size: 14px;
+}
+.price_wrap table {
+    margin: 51px 0 44px;
+}
+
+.price_wrap tr {
+    width: 100%;
+}
+.price_wrap th {
+    font-size: 14px;
+    border-bottom: 5px solid #202037;
+    text-align: left;
+}
+.price_wrap td {
+    padding: 20px 8px;
+    border: 1px solid #000;
+}
+.content {
+    width: 578px;
+}
+.th-bg {
+    background-color: #F2F2F2;
+}
+.td-price {
+    width: 230px;
+}
+.remark {
+    width: 290px;
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .price_wrap {
+        max-width: 950px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+    .price_menu ul {
+        max-width: 715px;
+    }
+    .price_wrap {
+        max-width: 715px;
+    }
+    .price_wrap table {
+        width: 1218px;
+    }
+    .scroll-table:after {
+        content: "※ 横にスクロールできます。";
+    }
+    .scroll-table {
+        overflow: auto;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    
+    .price_menu ul {
+        padding: 0 3%;
+    }
+    .price_wrap {
+        padding: 0 5%;
+    }
+    .price_wrap .price_wrap-block-heading-nam {
+        margin-right: 35px;
+    }
+}

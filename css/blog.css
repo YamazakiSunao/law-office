@@ -1,0 +1,133 @@
+.blog_archive {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.blog_archive .blog_archive-wrap {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 101px 0 136px;
+}
+.blog_archive .blog_archive-wrap-list {
+    width: 30%;
+    margin-bottom: 67px;
+    transition: all .3s;
+}
+.blog_archive .blog_archive-wrap-list:hover {
+    opacity: .7;
+}
+.blog_archive .blog_archive-wrap-list:last-child,
+.blog_archive .blog_archive-wrap-list:nth-last-child(2) {
+    margin-bottom: 0;
+}
+.blog_archive .blog_archive-wrap-list a {
+    text-decoration: none;
+}
+
+.blog_archive .blog_archive-wrap-list-time,
+.blog_archive .blog_archive-wrap-list-txt {
+    color: #A4ABB0;
+}
+.blog_archive .blog_archive-wrap-list-time {
+    font-family: Avenir, sans-serif;
+}
+.blog_archive .blog_archive-wrap-list-title {
+    color: #000;
+}
+
+.blog_footer {
+    background-color: #fff;
+}
+
+.pager  ul.pagination {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.pager .pagination li {
+    display: inline;
+    margin: 0 2px;
+    padding: 0;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #202037;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.pager .pagination li a{
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display:table;
+    color: #202037;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.pager .pagination li a span{
+    display:table-cell;
+    vertical-align:middle;
+    font-family: Avenir, sans-serif;
+}
+
+.pager .pagination li a:hover,
+.pager .pagination li a.active{
+    color: #FFF;
+    background: #202037;
+}
+
+@media only screen and (max-width: 767px){
+    .pager .pagination li{
+        display: none;
+    }
+
+    .pager .pagination li.pre,
+    .pager .pagination li.next{
+        display: inline-block;
+        width: 40%;
+        height: 50px;
+        text-align: center;
+    }
+
+    .pager .pagination li.pre a,
+    .pager .pagination li.next a{
+        width: 100%;
+        text-align: center;
+    }
+
+    .pager .pagination li.pre span::after{
+        content: "　前の12件へ";
+    }
+
+    .pager .pagination li.next span::before{
+        content: "次の12件へ　";
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .blog_archive {
+        padding: 0 5%;
+    }
+    
+}
+@media screen and (max-width: 786px) {
+}
+@media screen and (max-width: 414px) {
+    
+    .blog_archive .blog_archive-wrap-list {
+        width: 48%;
+        margin-bottom: 30px;
+    }
+    
+}

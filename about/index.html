@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>藤岡行政書士事務所</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../css/reset.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/about.css">
+    </head>
+    <body>
+
+        <header id="top-head">
+            <div class="inner">
+                <div id="mobile-head">
+                    <h1 class="logo"><a href="#"><img src="../image/top-logo.svg" alt=""></a></h1>
+                    <div id="nav-toggle">
+                        <div>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <nav id="global-nav">
+                    <ul>
+                        <li><a href="../about/index.html">About</a></li>
+                        <li><a href="../service/index.html">Service</a></li>
+                        <li><a href="../price/index.html">Price</a></li>
+                        <li><a href="../blog/index.html">Blog</a></li>
+                        <li><a href="../contact/index.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="top-heading"><h1>About</h1></div>
+            <div class="parallax-window" data-parallax=”scroll” data-speed="0.8" data-position="center center" data-image-src="../image/top_img3.jpg"></div>
+
+            <section class="support_wrap">
+                <div class="support_wrap-title"><h2>Support your web service</h2></div>
+                <div class="support_wrap-txt"><p>webを通して人々の心や生活が豊かになるよう、法律の面からサポートいたします。</p></div>
+            </section>
+
+            <section class="point">
+                <div class="point_heading">
+                    <h2>Point</h2>
+                </div>
+                <div class="point_wrap-left-title">
+                    <h3>制作会社での経歴を活かしたご提案ができます</h3>
+                </div>
+                <div class="point_wrap">
+                    <div class="point_wrap-left">
+                        <p class="point_wrap-left-txt">私はこれまでにIT系企業においてweb制作、新規webサービスの立ち上げ、ファンクラブビジネスを経験し「webが持つ可能性」を信じるようになりました。<br>
+                        「webが持つ可能性」とはwebを通して人々の心や生活がもっと豊かになっていくことです。</p>
+                        <p class="point_wrap-left-txt">当事務所ではIT法務（契約書作成や各種許認可手続きなど）を中心に、海外技術者のビザ手続き、そしてwebを介した新たなビジネスモデルとして評判の民泊（登録手続き）など、広くwebに関する手続きのサポートを行ってまいります。</p>
+                    </div>
+
+                    <div class="point_wrap-right">
+                        <p>書類作成など法律面からあなたのwebサービスのサポートをします。<br>
+                            新たなwebサービスが生まれ、そのサービスを利用することで多くの人々の心や生活が豊かになる。<br>
+                            そしていつか日本が世界のIT分野をリードする日がくることを願っています。<br>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="date">
+                <div class="date-wrap">
+                    <div class="date-wrap-profile">
+                        <h2 class="date-wrap-heading">Office date</h2>
+                        <dl class="date-wrap-info">
+                            <dt>名称：</dt>
+                            <dd>藤岡行政書士事務所</dd>
+                            <dt>代表：</dt>
+                            <dd>藤岡雅也</dd>
+                            <dt>行政書士番号：</dt>
+                            <dd>0000000000000</dd>
+                            <dt>取り扱い案件：</dt>
+                            <dd>労務、民泊、Visa</dd>
+                            <dt>電話番号：</dt>
+                            <dd>06-5555-5555</dd>
+                            <dt>FAX：</dt>
+                            <dd>06-5555-5555</dd>
+                            <dt>住所</dt>
+                        </dl>
+                    </div>
+                    <div class="date-wrap-img">
+                        <img src="../image/office-img.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+           <section class="about-map">
+               <div id="map"></div>
+           </section>
+
+            <section class="contact_wrap">
+                <p class="contact_wrap-txt">まずはメールで<br class="ds-sm">お気軽にお問い合わせください。</p>
+                <div class="contact_wrap-btn">
+                    <a href="../contact/index.html">CONTACT</a>
+                </div>
+            </section>
+
+        </main>
+
+        <footer></footer>
+
+        <script src="../js/jquery1.8.3.js"></script>
+        <script src="../js/parallax.js"></script>
+        <script src="../js/main.js"></script>
+        <script>
+            $('.parallax-window').parallax({
+                imageSrc: '../image/top_img3.jpg'
+            });
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyButxDtrOn339PksfojfQfDVTAw9a-2RnY"></script>
+        <script>
+            var mapDiv = document.getElementById("map");
+
+            var mapPosition = {
+                lat: 35.017126,
+                lng: 135.757052
+            };
+
+            var mapOptions = {
+                center: mapPosition,
+                zoom: 18,
+            };
+
+            var map = new google.maps.Map(mapDiv, mapOptions);
+
+            var marker = new google.maps.Marker({
+                map: map,
+                position: mapPosition,
+                icon: "../image/fujioka-mark.png",
+            });
+        </script>
+    </body>
+</html>
